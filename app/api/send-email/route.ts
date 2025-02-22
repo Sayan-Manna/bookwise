@@ -1,6 +1,6 @@
 // /src/app/api/send-email/route.ts
 import { NextResponse } from "next/server";
-import emailjs from "@emailjs/nodejs";
+import emailjs from "@emailjs/browser";
 
 export async function POST(request: Request) {
   const { to, subject, html } = await request.json();
